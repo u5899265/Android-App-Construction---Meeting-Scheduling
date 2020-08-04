@@ -3,9 +3,6 @@
 
 Brainstorm ᕕ( ᐛ )ᕗ
 
-To start the development, clone this repo.
-In Andriod Studio (AS), select "Open an existing Android Studio project" and select the root folder "comp2100_6442_Meeting_Scheduling". AS will start a gradle build. It should proceed with no error.
-
 Meetings, Meeting, TimeSlot and User are data structures designed to hold our data
 We also used LocalDateTime and Duration from java.time package added since jdk8
 
