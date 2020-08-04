@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "992506435378",
+    "firebase_url": "https://meeting-scheduling-wemeet.firebaseio.com",
+    "project_id": "meeting-scheduling-wemeet",
+    "storage_bucket": "meeting-scheduling-wemeet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992506435378:android:df87f60949713cedd0292b",
+        "android_client_info": {
+          "package_name": "com.example.comp2100_6442_meeting_scheduling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992506435378-jge7psg5otl6essbgaj7b0ioqf91hbt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAltkAdQDvDa3jlFJ-G45zIrLPNTU-7uGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992506435378-jge7psg5otl6essbgaj7b0ioqf91hbt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

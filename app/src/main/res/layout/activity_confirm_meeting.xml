@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#DFB6AA"
+    tools:context=".ConfirmMeetingActivity">
+
+    <Button
+        android:id="@+id/choice1"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="373dp"
+        android:background="#FBC02D"
+        android:onClick="submitChoice1"
+        android:text="Slot 1 - StartingTime - HeadCount"
+        app:layout_constraintBottom_toTopOf="@+id/tv_warning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:background="#FBC02D"
+        android:onClick="submitChoice2"
+        android:text="Slot 2 - StartingTime - HeadCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice1" />
+
+    <Button
+        android:id="@+id/choice3"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="70dp"
+        android:background="#FBC02D"
+        android:onClick="submitChoice3"
+        android:text="Slot 3 - StartingTime - HeadCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice2" />
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="#F57C00"
+        android:fontFamily="sans-serif-black"
+        android:text="Warning: You only have one chance!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

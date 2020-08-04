@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.comp2100_6442_meeting_scheduling">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".Permission" />
+        <activity
+            android:name=".SelectionActivity"
+            android:label="@string/title_activity_selection">
+            <intent-filter android:label="WeMeet">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="comp2100_6442_meeting_scheduling.example.com"
+                    android:pathPrefix="/SelectionActivity"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseActivity" />
+        <activity
+            android:name=".CalendarActivity"
+            android:label="Calendar" />
+        <activity android:name=".ConfirmMeetingActivity" />
+        <activity android:name=".FirstRunActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateMeetingActivity" />
+        <activity android:name=".UserListActivity" />
+        <activity android:name=".MyMeetingsActivity" />
+    </application>
+
+</manifest>

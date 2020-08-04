@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:onClick="sendNotification"
+        android:text="TestNotification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="openCalender"
+        android:text="TestCalender"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="startCreation"
+        android:text="CreateNewMeeting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/to_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="goToMeet"
+        android:text="TestMeet"
+        app:layout_constraintBottom_toTopOf="@+id/Calender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/test_Read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="testRead"
+        android:text="TestRead"
+        app:layout_constraintBottom_toTopOf="@+id/to_meet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/test_fetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="testFetch"
+        android:text="TestFetch"
+        app:layout_constraintBottom_toTopOf="@+id/test_Read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/test_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="testUpdate"
+        android:text="TestUpdate"
+        app:layout_constraintBottom_toTopOf="@+id/test_fetch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/test_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="testDelete"
+        android:text="TestDelete"
+        app:layout_constraintBottom_toTopOf="@+id/test_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/test_fetch_confirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:onClick="testFetchConfirmed"
+        android:text="Confirmed"
+        app:layout_constraintBottom_toBottomOf="@+id/test_fetch"
+        app:layout_constraintStart_toEndOf="@+id/test_fetch"
+        app:layout_constraintTop_toTopOf="@+id/test_fetch" />
+
+    <Button
+        android:id="@+id/test_overwrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="testOverwriteTimeSlots"
+        android:text="Overwrite"
+        app:layout_constraintBottom_toBottomOf="@+id/test_update"
+        app:layout_constraintEnd_toEndOf="@+id/test_fetch_confirmed"
+        app:layout_constraintStart_toStartOf="@+id/test_fetch_confirmed"
+        app:layout_constraintTop_toTopOf="@+id/test_update" />
+
+    <Button
+        android:id="@+id/selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="openSelection"
+        android:text="TestSelection"
+        app:layout_constraintStart_toEndOf="@+id/test_Read"
+        app:layout_constraintTop_toBottomOf="@+id/test_fetch_confirmed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
