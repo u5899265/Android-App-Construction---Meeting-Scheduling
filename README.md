@@ -1,4 +1,5 @@
 **See Wiki for detailed descriptions of this APP!**
+https://github.com/u5899265/Android-App-Construction---Meeting-Scheduling/wiki
 
 
 Brainstorm ᕕ( ᐛ )ᕗ
